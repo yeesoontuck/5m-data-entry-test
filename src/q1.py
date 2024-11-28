@@ -11,9 +11,8 @@ def swap(x, y):
     if not(isinstance(x, (int, float))) or not(isinstance(y, (int, float))):
         print(-1)
     else:
-        x = x + y
-        y = x - y
-        x = x - y
+        # assign multiple values
+        x, y = y, x 
 
         print(x, y)
 
@@ -30,3 +29,4 @@ swap(9, 17)
 # https://www.w3schools.com/python/python_conditions.asp
 # https://www.w3schools.com/python/ref_func_isinstance.asp
 # https://www.w3schools.com/python/python_operators.asp
+# https://www.w3schools.com/python/python_variables_multiple.asp
