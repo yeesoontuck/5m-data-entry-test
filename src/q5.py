@@ -6,6 +6,10 @@ def check_divisibility(num, divisor):
     - Return True if num is divisible by divisor, False otherwise.
     """
 
+    if not(isinstance(num, (int, float))) or not(isinstance(divisor, (int, float))):
+        return "num or divisor is not numeric"
+        
+
     # modulus returns 0 if it is divisible
     return (num % divisor) == 0
     # return True
@@ -16,7 +20,7 @@ def check_divisibility(num, divisor):
 # - 10, 2
 # - 7, 3
 
-print(check_divisibility(10, 2))
+print(check_divisibility("a", 2))
 print(check_divisibility(7, 3))
 
 # Reference
